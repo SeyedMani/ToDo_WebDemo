@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 *{
-    font-family: 'caviar dreams', serif;
+    font-family: 'Ubuntu', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +19,12 @@
 .todoapp{
     width: 100%;
     max-width: 540px;
-    background: transparent;
+    backdrop-filter: blur(10px);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;
     border: 1px solid #ffffff;
+    box-shadow: 0 0 5em #000000;
 }
 .todoapp h1{
     text-align: center;
@@ -48,7 +51,7 @@
     margin-bottom: 20px;
 }
 ::placeholder{
-    color: #ffffff;
+    color: #969696;
 }
 input{
     flex: 1;
