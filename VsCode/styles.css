@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Tabriz";
+    src: url(Far_Hamid.ttf)
+}
+
+*{
+    font-family: 'Tabriz';
+    transition: .2s ease-in-out;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+
+@keyframes shadowCol {
+    0%{
+        box-shadow: 0px 0px 400px #d93e3e,0px 0px 400px #43f701;
+    }
+    25%{
+        box-shadow: 0px 0px 400px #13a1e8,0px 0px 400px #ff0000;
+    }
+    50%{
+        box-shadow: 0px 0px 400px #11c851,0px 0px 400px #56053c;
+    }
+    75%{
+        box-shadow: 0px 0px 400px #a61076;
+    }
+    100%{
+        box-shadow: 0px 0px 400px #ede20a, 0px 0px 400px #a61076;
+    }
+}
+
+
+.middle-box{
+    padding: 60px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 200px #4c4c4c;
+    font-size: 25px;
+    animation: shadowCol 3s infinite;
+}
